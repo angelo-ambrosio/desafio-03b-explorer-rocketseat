@@ -28,15 +28,19 @@
     <form id="main-form">
 
         <fieldset>
-            <div class="input-wrapper">
-                <label for="name">Nome</label>
-                <input type="text" id="name">
+            
+            <div class="first-line">
+                <div class="input-wrapper">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                </div>
+    
+                <div class="input-wrapper">
+                    <label for="surname">Sobrenome</label>
+                    <input type="text" id="surname">
+                </div>                
             </div>
-
-            <div class="input-wrapper">
-                <label for="surname">Sobrenome</label>
-                <input type="text" id="surname">
-            </div>
+            
 
             <div class="input-wrapper">
                 <label for="email">Email <span>(digite um e-mail válido)</span></label>
@@ -51,12 +55,12 @@
 
             <div class="input-wrapper">
                 <label for="mentor">Selecione quem foi o seu mentor</label>
-                <select name="mentor" id="mentor">
-                    <option value="João Castelo Branco"></option>
-                    <option value="Paulo Vinícius Coelho"></option>
-                    <option value="Gustavo Hoffmann"></option>
-                    <option value="Paulo César Calçade"></option>
-                    <option value="Denílson Show"></option>
+                <select name="mentor" id="mentor" placeholder="Escolha entre as opções abaixo">
+                    <option value=""></option>
+                    <option value="Paulo Vinícius Coelho">Paulo Vinícius Coelho</option>
+                    <option value="Gustavo Hoffmann">Gustavo Hoffmann</option>
+                    <option value="Paulo César Calçade">Paulo César Calçade</option>
+                    <option value="Denílson Show">Denílson Show</option>
                 </select>
             </div>
             
@@ -65,7 +69,7 @@
                 <textarea id="feedback"></textarea>
             </div>
 
-            <div class="input-wrapper">
+            <div class="input-wrapper check-div">
                 <input type="checkbox" name="" id="check">
                 <label for="check">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
             </div>
